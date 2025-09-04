@@ -1,4 +1,4 @@
-# -Dotfiles-
+# Dotfiles
 Personal Hyprland and Waybar dotfiles for Arch Linux.
 ## Installation
 Clone the repo and run the installer:

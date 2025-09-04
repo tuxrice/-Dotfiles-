@@ -1,0 +1,35 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 28,
+  "margin": "6 10 0 10",
+
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["cpu", "temperature", "pulseaudio", "network", "battery"],
+
+  "clock": {
+    "format": " {:%A, %d %B   %H:%M}"
+  },
+  "cpu": {
+    "format": " {usage}%"  // '' = CPU icon
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": " {temperatureC}°C",
+    "hwmon-path": "/sys/class/hwmon/hwmon1/temp1_input"
+  },
+  "pulseaudio": {
+    "format": " {volume}%"  // '' = Speaker icon
+  },
+  "network": {
+    "format-wifi": " {signalStrength}%",
+    "format-ethernet": " {ifname}",
+    "format-disconnected": ""
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""]
+  }
+}
+
